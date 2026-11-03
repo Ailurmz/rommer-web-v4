@@ -1067,3 +1067,6 @@ input, select { font: inherit; }
 .sticker > img, .pro__media .sticker > img, .star-prod__bottle .sticker > img, .polaroid .sticker > img, .duo__card .sticker > img, .spot .sticker > img, .hotgirls__media .sticker > img {
   position: static !important; inset: auto !important; width: 100% !important; height: auto !important; max-width: none; opacity: 1 !important; transform: none !important; filter: none !important; object-fit: contain;
 }
+
+/* rommer's Club: palabra de marca en Blur, en la banda negra */
+.mix em.brand-word { font-family: var(--f-display); font-style: normal; font-weight: 600; text-transform: none; letter-spacing: 0; }
