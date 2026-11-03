@@ -1055,3 +1055,15 @@ input, select { font: inherit; }
   .hero--full .hero__media img { object-position: 72% 40%; }
   .hero--full .hero__media::after { background: linear-gradient(180deg, #E9E9E7 0%, rgba(233,233,231,0) 22%); }
 }
+
+/* Footer: frase en tres líneas */
+.footer__tag { display: block; line-height: .92; font-size: clamp(2rem, 4.6vw, 4.4rem); }
+
+/* Stickers originales */
+.sticker img { width: 100%; height: auto; display: block; pointer-events: none; user-select: none; }
+.hero__badge { width: clamp(120px, 11.5vw, 170px); }
+.kit__burst { width: 120px; }
+@media (max-width: 900px) { .kit__burst { width: 86px; } }
+.sticker > img, .pro__media .sticker > img, .star-prod__bottle .sticker > img, .polaroid .sticker > img, .duo__card .sticker > img, .spot .sticker > img, .hotgirls__media .sticker > img {
+  position: static !important; inset: auto !important; width: 100% !important; height: auto !important; max-width: none; opacity: 1 !important; transform: none !important; filter: none !important; object-fit: contain;
+}

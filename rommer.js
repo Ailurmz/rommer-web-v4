@@ -124,10 +124,18 @@
     if (mono && MONO[name]) Object.keys(MONO[name]).forEach(function (k) { s = s.split(k).join(MONO[name][k]); });
     return s;
   }
+  /* Stickers originales de la marca (assets/img/st-*.webp). Para cambiar uno, reemplazá el archivo. */
+  var STICKER_IMG = {
+    smiley: "st-smiley.webp", approved: "st-approved.webp", proheart: "st-estrella.webp", cherry: "st-cereza.webp",
+    rr: "st-rr.webp", structured: "st-structured.webp", motion: "st-logo.webp", burst: "st-corazon.webp",
+    star: "st-r.webp", heart: "st-corazon.webp"
+  };
   function hydrateStickers(root) {
     $$("[data-sticker]", root).forEach(function (el) {
       if (el.dataset.done) return;
-      el.innerHTML = stickerSVG(el.dataset.sticker, el.dataset.fill, el.dataset.stroke, el.dataset.tone); el.dataset.done = "1";
+      var file = STICKER_IMG[el.dataset.sticker];
+      el.innerHTML = file ? '<img src="' + IMG + file + '" alt="" draggable="false" loading="lazy">' : stickerSVG(el.dataset.sticker, el.dataset.fill, el.dataset.stroke, el.dataset.tone);
+      el.dataset.done = "1";
     });
   }
   function wordmark() { return '<span class="wordmark" aria-label="rommer"><i class="L"></i><i class="L"></i><i class="L"></i><i class="L"></i><i class="L"></i><i class="L"></i></span>'; }
@@ -247,7 +255,7 @@
     var s0 = p.sizes[0], sale = p.compare && p.sizes.length;
     var badge = p.badge ? '<span class="pcard__badge' + (p.compare ? " pcard__badge--sale" : "") + '">' + p.badge + "</span>" : "";
     var seg = p.sizes.length > 1 ? '<div class="seg" role="group" aria-label="Tamaño">' + p.sizes.map(function (s, i) { return '<button type="button" aria-pressed="' + (i === 0) + '" data-size="' + i + '">' + s.l + "</button>"; }).join("") + "</div>" : '<div class="seg"><button type="button" aria-pressed="true">' + s0.l + "</button></div>";
-    var stk = ["smiley", "approved", "proheart", "cherry", "rr", "burst"][PRODUCTS.indexOf(p) % 6];
+    var stk = ["smiley", "approved", "proheart", "cherry", "rr", "burst", "star", "structured"][PRODUCTS.indexOf(p) % 8];
     return '<article class="pcard" data-card data-size="0">' +
       '<a class="pcard__media" href="producto.html#' + p.id + '" aria-label="' + p.name + '">' + badge +
       '<img class="main" src="' + IMG + p.img + '" alt="' + p.name + '" loading="lazy"><img class="alt" src="' + IMG + p.img + '" alt="" loading="lazy">' +
