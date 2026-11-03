@@ -9,7 +9,7 @@
   "use strict";
 
   var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var IMG = "assets/img/";
+  var IMG = "";
   var FREE_SHIP = 50000; // envío gratis desde (ARS) — placeholder
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
