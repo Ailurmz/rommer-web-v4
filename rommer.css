@@ -12,29 +12,29 @@
    Al recibir la fuente completa, reemplazar blur-medium.woff2. */
 @font-face {
   font-family: "Blur";
-  src: url("../fonts/blur-medium.woff2") format("woff2");
+  src: url("blur-medium.woff2") format("woff2");
   font-weight: 100 900; font-style: normal; font-display: swap;
 }
 @font-face {
   font-family: "Rommer Display";
-  src: url("../fonts/fredoka-latin-standard-normal.woff2") format("woff2");
+  src: url("fredoka-latin-standard-normal.woff2") format("woff2");
   font-weight: 300 700; font-stretch: 75% 125%; font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Rommer Display";
-  src: url("../fonts/fredoka-latin-ext-standard-normal.woff2") format("woff2");
+  src: url("fredoka-latin-ext-standard-normal.woff2") format("woff2");
   font-weight: 300 700; font-stretch: 75% 125%; font-display: swap;
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2");
+  src: url("inter-latin-wght-normal.woff2") format("woff2");
   font-weight: 100 900; font-style: normal; font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-latin-wght-italic.woff2") format("woff2");
+  src: url("inter-latin-wght-italic.woff2") format("woff2");
   font-weight: 100 900; font-style: italic; font-display: swap;
 }
 
@@ -115,7 +115,7 @@ input, select { font: inherit; }
 /* ---------- Isotipo r (máscara) ---------- */
 .r-dot {
   display: inline-block; width: 1em; height: 1em; background: currentColor; flex: none;
-  -webkit-mask: url("../img/iso-r.png") center / contain no-repeat; mask: url("../img/iso-r.png") center / contain no-repeat;
+  -webkit-mask: url("iso-r.png") center / contain no-repeat; mask: url("iso-r.png") center / contain no-repeat;
 }
 
 /* ---------- Wordmark por letras (logo real) ---------- */
@@ -124,15 +124,15 @@ input, select { font: inherit; }
   position: absolute; top: 0; height: 100%; background: currentColor; transform-origin: 50% 100%;
   -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
 }
-.wordmark .L:nth-child(1) { left: .22%;  width: 9.25%;  -webkit-mask-image: url("../img/logo-l0.png"); mask-image: url("../img/logo-l0.png"); }
-.wordmark .L:nth-child(2) { left: 9.47%; width: 16.66%; -webkit-mask-image: url("../img/logo-l1.png"); mask-image: url("../img/logo-l1.png"); }
-.wordmark .L:nth-child(3) { left: 27.11%; width: 22.67%; -webkit-mask-image: url("../img/logo-l2.png"); mask-image: url("../img/logo-l2.png"); }
-.wordmark .L:nth-child(4) { left: 51.14%; width: 22.67%; -webkit-mask-image: url("../img/logo-l3.png"); mask-image: url("../img/logo-l3.png"); }
-.wordmark .L:nth-child(5) { left: 74.76%; width: 15.14%; -webkit-mask-image: url("../img/logo-l4.png"); mask-image: url("../img/logo-l4.png"); }
-.wordmark .L:nth-child(6) { left: 90.79%; width: 9.25%;  -webkit-mask-image: url("../img/logo-l5.png"); mask-image: url("../img/logo-l5.png"); }
+.wordmark .L:nth-child(1) { left: .22%;  width: 9.25%;  -webkit-mask-image: url("logo-l0.png"); mask-image: url("logo-l0.png"); }
+.wordmark .L:nth-child(2) { left: 9.47%; width: 16.66%; -webkit-mask-image: url("logo-l1.png"); mask-image: url("logo-l1.png"); }
+.wordmark .L:nth-child(3) { left: 27.11%; width: 22.67%; -webkit-mask-image: url("logo-l2.png"); mask-image: url("logo-l2.png"); }
+.wordmark .L:nth-child(4) { left: 51.14%; width: 22.67%; -webkit-mask-image: url("logo-l3.png"); mask-image: url("logo-l3.png"); }
+.wordmark .L:nth-child(5) { left: 74.76%; width: 15.14%; -webkit-mask-image: url("logo-l4.png"); mask-image: url("logo-l4.png"); }
+.wordmark .L:nth-child(6) { left: 90.79%; width: 9.25%;  -webkit-mask-image: url("logo-l5.png"); mask-image: url("logo-l5.png"); }
 .logo-img {
   display: block; aspect-ratio: 1723 / 268; background: currentColor;
-  -webkit-mask: url("../img/logo-rommer.png") center / contain no-repeat; mask: url("../img/logo-rommer.png") center / contain no-repeat;
+  -webkit-mask: url("logo-rommer.png") center / contain no-repeat; mask: url("logo-rommer.png") center / contain no-repeat;
 }
 
 /* ---------- Botones ---------- */
